@@ -3,6 +3,7 @@
 
     // Enable pusher logging - don't include this in production
     Pusher.logToConsole = true;
+    cluster: 'ap2'
     var pusher = new Pusher('{{$talk__appKey}}', {!! $talk__options !!});
 
     @if(!empty($talk__userChannel['name']))
